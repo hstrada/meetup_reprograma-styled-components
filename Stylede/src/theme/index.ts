@@ -1,4 +1,4 @@
-import {DefaultTheme} from 'styled-components';
+import { DefaultTheme } from 'styled-components';
 
 import colors from './colors';
 
@@ -9,4 +9,4 @@ const styledeTheme: DefaultTheme = {
   units: units,
 };
 
-export {styledeTheme};
+export { styledeTheme };

@@ -7,13 +7,13 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
-import {ThemeProvider} from 'styled-components';
-import {styledeTheme} from './src/theme';
+import { ThemeProvider } from 'styled-components';
+import { styledeTheme } from './src/theme';
 
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 
-const Typography = styled(Text)`
-  background-color: ${({theme}) => theme.colors.primary};
+const Typography = styled.Text`
+  background-color: ${({ theme }) => theme.colors.primary};
 `;
 
 const App = () => {
