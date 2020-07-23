@@ -1,19 +1,27 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import { SafeAreaView, StatusBar, StyleSheet, Text } from 'react-native';
 import { ThemeProvider } from 'styled-components';
 import { styledeTheme } from './src/theme';
 
+import { Typography } from './src/components';
+
 import styled from 'styled-components/native';
 
-const Typography = styled.Text`
-  background-color: ${({ theme }) => theme.colors.primary};
+const styles = StyleSheet.create({
+  disabled: {
+    backgroundColor: 'gray',
+    marginBottom: 20,
+  },
+  label: {
+    backgroundColor: 'yellow',
+    marginBottom: 20,
+  },
+});
+
+const Container = styled.View`
+  background-color: blue;
+  width: 50px;
+  height: 50px;
 `;
 
 const App = () => {
@@ -21,9 +29,17 @@ const App = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
+        {/* without styled-components */}
+        <Text style={10 === 10 ? styles.label : styles.disabled}>
+          Hello World
+        </Text>
+
+        {/* with styled-components */}
         <ThemeProvider theme={styledeTheme}>
-          <Typography>Hello World</Typography>
+          <Typography />
         </ThemeProvider>
+
+        <Container />
       </SafeAreaView>
     </>
   );
