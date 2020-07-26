@@ -15,9 +15,9 @@ const App = () => {
         <Grid bgColor="#2ed47b">
           <Text>Hello World</Text>
         </Grid>
-        <DataGrid />
+        {/* <DataGrid />
         <DataGrid label="Market" description="182" />
-        <DataGrid variant="secondary" label="Market" description="182" />
+        <DataGrid variant="secondary" label="Market" description="182" /> */}
 
         <ThemeProvider theme={theme}>
           <DataGrid variant="secondary" label="Market" description="182" />

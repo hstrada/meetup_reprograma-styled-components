@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Container, Label, Description } from './styles';
 
+import colors from '../../theme/colors';
+
 // 01
 // const DataGrid = () => (
 //   <Container>
@@ -20,24 +22,71 @@ import { Container, Label, Description } from './styles';
 //   );
 // };
 
-import colors from '../../theme/colors';
+// 03
+// const DataGrid = ({ label, description, variant = 'primary' }) => {
+//   const data = {
+//     primary: {
+//       bgColor: '#3873fc',
+//       labelColor: '#FFF',
+//       descriptionColor: '#FFF',
+//     },
+//     secondary: {
+//       bgColor: '#F5F7FB',
+//       labelColor: '#B2B2B2',
+//       descriptionColor: '#000',
+//     },
+//   };
 
+//   return (
+//     <Container bgColor={data[variant].bgColor}>
+//       <Label labelColor={data[variant].labelColor}>{label}</Label>
+//       <Description descriptionColor={data[variant].descriptionColor}>
+//         {description}
+//       </Description>
+//     </Container>
+//   );
+// };
+
+// 04
+// const DataGrid = ({ label, description, variant = 'primary' }) => {
+//   const data = {
+//     primary: {
+//       bgColor: colors.persianBlue,
+//       labelColor: '#FFF',
+//       descriptionColor: '#FFF',
+//     },
+//     secondary: {
+//       bgColor: '#F5F7FB',
+//       labelColor: '#B2B2B2',
+//       descriptionColor: '#000',
+//     },
+//   };
+
+//   return (
+//     <Container bgColor={data[variant].bgColor}>
+//       <Label labelColor={data[variant].labelColor}>{label}</Label>
+//       <Description descriptionColor={data[variant].descriptionColor}>
+//         {description}
+//       </Description>
+//     </Container>
+//   );
+// };
+
+// 05
 const DataGrid = ({ label, description, variant = 'primary' }) => {
   const data = {
     primary: {
-      bgColor: colors.persianBlue,
       labelColor: '#FFF',
       descriptionColor: '#FFF',
     },
     secondary: {
-      bgColor: '#F5F7FB',
       labelColor: '#B2B2B2',
       descriptionColor: '#000',
     },
   };
 
   return (
-    <Container bgColor={data[variant].bgColor}>
+    <Container bgColor={variant}>
       <Label labelColor={data[variant].labelColor}>{label}</Label>
       <Description descriptionColor={data[variant].descriptionColor}>
         {description}
