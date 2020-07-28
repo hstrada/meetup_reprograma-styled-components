@@ -1,2 +1,1 @@
-export { default as DataGrid } from './DataGrid';
-export { default as Grid } from './Grid';
+export { default as Typography } from './Typography';
