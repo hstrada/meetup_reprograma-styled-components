@@ -8,6 +8,7 @@ const App = () => {
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <Typography />
+        <Typography bold />
       </SafeAreaView>
     </>
   );
