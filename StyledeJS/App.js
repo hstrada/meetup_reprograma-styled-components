@@ -1,6 +1,10 @@
 import React from 'react';
 import { SafeAreaView, StatusBar, View } from 'react-native';
-import { FlatButton, Typography } from './src/components';
+import { FlatButton, Typography, OutlineButton } from './src/components';
+
+import { ThemeProvider } from 'styled-components';
+
+import theme from './src/theme';
 
 const App = () => {
   return (
@@ -13,6 +17,11 @@ const App = () => {
           <View style={{ marginTop: 16 }}>
             <FlatButton />
           </View>
+          <ThemeProvider theme={theme}>
+            <View style={{ marginTop: 16 }}>
+              <OutlineButton />
+            </View>
+          </ThemeProvider>
         </View>
       </SafeAreaView>
     </>
