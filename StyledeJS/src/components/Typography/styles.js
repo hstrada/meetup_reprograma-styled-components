@@ -13,6 +13,12 @@ import styled from 'styled-components/native';
 
 // 03
 // components/Typography/styles.js
+// export const Label = styled.Text`
+//   color: #2ed47b;
+//   ${({ bold }) => bold && { 'font-weight': 'bold' }}
+// `;
+
+// 04
 export const Label = styled.Text`
   color: #2ed47b;
   ${({ bold }) => bold && { 'font-weight': 'bold' }}
