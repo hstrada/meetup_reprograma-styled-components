@@ -53,7 +53,7 @@ To clone the project, use the commands bellow:
 
 ```bash
   # Enter mobile directory
-  > cd StyledJS
+  > cd StyledeJS
 
   # Install the dependencies
   ❯ yarn
@@ -69,7 +69,7 @@ To clone the project, use the commands bellow:
 
 ```bash
   # Enter mobile directory
-  > cd StyledJS
+  > cd StyledeJS
 
   # Install the dependencies
   ❯ yarn
