@@ -1,6 +1,11 @@
 import React from 'react';
 import { SafeAreaView, StatusBar, View } from 'react-native';
-import { FlatButton, Typography, OutlineButton } from './src/components';
+import {
+  ActionButton,
+  FlatButton,
+  Typography,
+  OutlineButton,
+} from './src/components';
 
 import { ThemeProvider } from 'styled-components';
 
@@ -20,6 +25,7 @@ const App = () => {
           <ThemeProvider theme={theme}>
             <View style={{ marginTop: 16 }}>
               <OutlineButton />
+              <ActionButton />
             </View>
           </ThemeProvider>
         </View>
