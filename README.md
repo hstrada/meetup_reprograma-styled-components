@@ -1,12 +1,6 @@
 # meetup_reprograma-styled-components
 
-<p align="center">
-  
-  <p align="center">
-    Mobile app example project on how to use styled-components with typescript and love.
-  </p>
-  
-</p>
+Mobile app example project on how to use styled-components with typescript and love.
 
 # Index
 
