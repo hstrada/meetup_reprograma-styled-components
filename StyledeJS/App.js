@@ -3,9 +3,12 @@ import { SafeAreaView, StatusBar, View } from 'react-native';
 import {
   ActionButton,
   FlatButton,
+  // FlatButtonWithLabel,
   Typography,
   OutlineButton,
 } from './src/components';
+
+import MeExclua from './src/components/MeExclua';
 
 import { ThemeProvider } from 'styled-components';
 
@@ -21,6 +24,7 @@ const App = () => {
           <Typography bold />
           <View style={{ marginTop: 16 }}>
             <FlatButton />
+            {/* <FlatButtonWithLabel label="Register" /> */}
           </View>
           <ThemeProvider theme={theme}>
             <View style={{ marginTop: 16 }}>
@@ -28,6 +32,9 @@ const App = () => {
               <ActionButton />
             </View>
           </ThemeProvider>
+        </View>
+        <View style={{ padding: 16 }}>
+          <MeExclua />
         </View>
       </SafeAreaView>
     </>

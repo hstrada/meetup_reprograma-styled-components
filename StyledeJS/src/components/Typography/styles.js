@@ -21,5 +21,6 @@ import styled from 'styled-components/native';
 // 04
 export const Label = styled.Text`
   color: #2ed47b;
-  ${({ bold }) => bold && { 'font-weight': 'bold' }}
+  ${({ bold }) => bold && { 'font-weight': 'bold' }};
+  /* font-size: 24px; */
 `;
