@@ -2,6 +2,7 @@
 
 import colors from './colors';
 import units from './units';
+// import fonts from './fonts';
 
 const theme = {
   colors,

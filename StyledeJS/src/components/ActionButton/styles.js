@@ -12,9 +12,9 @@ export const Container = styled.View`
 
 export const Label = styled.Text`
   color: ${({ theme }) => theme.colors.primary};
-  /* font-size: 24px; */
+  font-size: 24px;
 `;
 
 export const Description = styled(Label)`
-  /* font-size: 14px; */
+  font-size: 14px;
 `;

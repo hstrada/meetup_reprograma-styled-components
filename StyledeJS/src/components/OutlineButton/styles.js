@@ -6,7 +6,7 @@ export const Container = styled.TouchableOpacity`
   width: 100%;
   height: 56px;
   /* border-color: #2ed47b; */
-  border-color: ${({ theme }) => theme.colors.primary};
+  border-color: ${({ theme }) => theme.primary};
   border-width: 1px;
   border-radius: 36px;
   justify-content: center;
@@ -14,7 +14,7 @@ export const Container = styled.TouchableOpacity`
 `;
 
 export const Label = styled.Text`
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.primary};
   font-weight: bold;
   font-size: 16px;
 `;

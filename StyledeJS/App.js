@@ -8,13 +8,15 @@ import {
   OutlineButton,
 } from './src/components';
 
-import MeExclua from './src/components/MeExclua';
-
 import { ThemeProvider } from 'styled-components';
 
-import theme from './src/theme';
+import themeDoAmor from './src/theme';
+
+import colors from './src/theme/colors';
+import units from './src/theme/units';
 
 const App = () => {
+  console.log(colors);
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -26,15 +28,12 @@ const App = () => {
             <FlatButton />
             {/* <FlatButtonWithLabel label="Register" /> */}
           </View>
-          <ThemeProvider theme={theme}>
+          <ThemeProvider theme={{ ...colors, ...units }}>
             <View style={{ marginTop: 16 }}>
               <OutlineButton />
-              <ActionButton />
+              {/* <ActionButton /> */}
             </View>
           </ThemeProvider>
-        </View>
-        <View style={{ padding: 16 }}>
-          <MeExclua />
         </View>
       </SafeAreaView>
     </>
