@@ -7,7 +7,6 @@ Mobile app example project on how to use styled-components with typescript and l
 - :rocket: [Project Summary](#rocket-project-summary)
 - 👨‍💻️ [Technologies Used](#%EF%B8%8F-technologies-used)
 - 📦️ [How to install the project](#%EF%B8%8F-how-to-install-the-project)
-- :floppy_disk: [Other _codecafe repositories](#floppy_disk-others-_codecafes-repositories)
  
 ## :rocket: Project Summary
 
